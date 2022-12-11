@@ -1,0 +1,6 @@
+export { default as Edit } from './icons/edit'
+export { default as OpenNew } from './icons/openNew'
+export { default as Copy } from './icons/copy'
+export { default as Delete } from './icons/delete'
+export { default as Mail } from './icons/mail'
+export { default as Transfer } from './icons/transfer'
