@@ -8,7 +8,12 @@
           </header>
         </v-col>
         <v-col cols="2">
-          <v-btn variant="flat" color="secondary" class="btn-primary">
+          <v-btn
+            @click="$router.push('/tipos-tratamento/new')"
+            variant="flat"
+            color="secondary"
+            class="btn-primary"
+          >
             Adicionar
           </v-btn>
         </v-col>

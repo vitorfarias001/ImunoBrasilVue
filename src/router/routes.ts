@@ -125,7 +125,7 @@ export const routes: Array<RouteRecordRaw> = [
       {
         path: "tipos-tratamento",
         name: "page-tipos-tratamento",
-        component: () => import("../pages/tipos-tratamento/index.vue"),
+        component: () => import("../pages/tipos-tratamento/list.vue"),
         meta: {
           needsAuth: true,
           showInMenu: true,
@@ -133,32 +133,18 @@ export const routes: Array<RouteRecordRaw> = [
           roles: [2],
           icon: "tipotratamentos.svg",
         },
-        children: [
-          {
-            path: "",
-            name: "page-tipos-tratamento-list",
-            component: () => import("../pages/tipos-tratamento/list.vue"),
-            meta: {
-              needsAuth: true,
-              showInMenu: true,
-              displayText: "Tipos de Tratamentos",
-              roles: [2],
-              icon: "tipotratamentos.svg",
-            },
-          },
-          {
-            path: "/new",
-            name: "page-tipos-tratamento-new",
-            component: () => import("../pages/tipos-tratamento/new.vue"),
-            meta: {
-              needsAuth: true,
-              showInMenu: true,
-              displayText: "Tipos de Tratamentos",
-              roles: [2],
-              icon: "tipotratamentos.svg",
-            },
-          },
-        ],
+      },
+      {
+        path: "tipos-tratamento/new",
+        name: "page-tipos-tratamento-new",
+        component: () => import("../pages/tipos-tratamento/new.vue"),
+        meta: {
+          needsAuth: true,
+          showInMenu: false,
+          displayText: "Tipos de Tratamentos",
+          roles: [2],
+          icon: "tipotratamentos.svg",
+        },
       },
       {
         path: "convenios",

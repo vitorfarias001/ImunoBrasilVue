@@ -8,23 +8,14 @@
           </header>
         </v-col>
         <v-col cols="2">
-          <v-btn variant="flat" color="secondary" class="btn-primary">
-            Adicionar
+          <v-btn variant="flat" color="secondary" class="btn-reject">
+            Cancelar
           </v-btn>
         </v-col>
         <v-col cols="2">
-          <div
-            class="d-flex justify-space-around align-center flex-column flex-sm-row fill-height"
-          >
-            <v-text-field
-              density="compact"
-              variant="solo"
-              label="Pesquisar"
-              append-inner-icon="mdi-magnify"
-              single-line
-              hide-details
-            ></v-text-field>
-          </div>
+          <v-btn variant="flat" color="secondary" class="btn-primary">
+            Salvar
+          </v-btn>
         </v-col>
       </div>
     </v-row>
@@ -173,6 +164,24 @@ export default defineComponent({
     float: right;
     &:hover {
       background: #80c34090 !important;
+    }
+  }
+
+  .btn-reject {
+    background-color: #f8d7da !important;
+    color: #842029 !important;
+
+    min-width: 64px;
+    border-radius: 4px;
+    width: 180px;
+    font-weight: 500;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    line-height: 3.5;
+    min-height: 45px;
+    float: right;
+    &:hover {
+      background: #ffb9be !important;
     }
   }
 
